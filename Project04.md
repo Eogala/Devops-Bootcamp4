@@ -74,7 +74,7 @@ I Clicked on Custom TCP to select MySQL/Aurora!
 
 IP address was added to allow access and restrict it to MySQL exclusively to the Web Server’s IP address. (inbound Rule configuration, specify the source as /32) then click Save rules
 
-[pic](img/img4.png)
+![pic](img/img4.png)
 
 
 Connected to your Ubuntu server via SSH using terminal
