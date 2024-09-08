@@ -261,15 +261,15 @@ To make your website accessible via your domain name rather than the IP address,
 
 Note
 
-Visit Project1 for instructions on how to create a hosted zone.
+* Visit Project1 for instructions on how to create a hosted zone.
 
-Point your domain's DNS records to the IP addresses of your Apache load balancer server.
+* Point your domain's DNS records to the IP addresses of your Apache load balancer server.
 
-In route 53, click on Create record.
+* In route 53, click on Create record.
 
 
 
-Paste your IP address➀ and then click on Create records➁ to create the root domain.
+* Paste your IP address➀ and then click on Create records➁ to create the root domain.
 
 Click on Create record again, to create the record for your sub domain.
 Paste your IP address➀, input the Record name(www➁) and then click on Create records➂.
