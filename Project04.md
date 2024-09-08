@@ -255,6 +255,7 @@ phpinfo();
 
 Once you've saved and closed the file, go back to your web browser and refresh the page. You should see something like this:
 
-## Create An A Record
+Hello
+
 
 
