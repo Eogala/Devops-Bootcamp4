@@ -150,3 +150,66 @@ After the installation is complete, log in to the MySQL console by typing: sudo 
 * Confirm the downloaded PHP version by running php -v.
 
 ![pic](img/img19.png)
+
+## Creating A Virtual Host For Your Website Using Apache
+
+* Create the directory for Projectlamp using the 'mkdir' command as follows: sudo mkdir /var/www/projectlamp and assign ownership of the directory to our current system user using: sudo chown -R $USER:$USER /var/www/projectlamp
+
+![pic](img/img20.png)
+
+
+* Create and open a new configuration file in Apache's sites-available directory using your preferred command-line editor: sudo vi /etc/apache2/sites-available/projectlamp.conf.
+
+
+* Creating this will produce a new blank file. Paste the configuration text provided below into it:
+
+<VirtualHost *:80>
+
+ServerName projectlamp
+
+ServerAlias www.projectlamp
+
+ServerAdmin webmaster@localhost
+
+DocumentRoot /var/www/projectlamp
+
+ErrorLog ${APACHE_LOG_DIR}/error.log
+
+CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+![pic](img/img21.png)
+
+* Save your changes by pressing the Esc key, then type :wq and press Enter.
+
+
+* Run the ls command sudo ls /etc/apache2/sites-available① to show the new file② in the sites-available directory.
+
+
+* enable the new virtual host using the a2ensite command: sudo a2ensite projectlamp.
+
+To disable Apache's default website, use the a2dissite command. Type: sudo a2dissite 000-default
+
+To ensure your configuration file doesn’t contain syntax errors, run: sudo apache2ctl configtest. You should see "Syntax OK" in the output if your configuration is correct.
+
+Finally run: sudo systemctl reload apache2. This will reload Apache for the changes to take effect.
+
+
+
+Our new website is now active, but the web root /var/www/projectlamp is still empty. Let's create an index.html file in that location to test that the virtual host works as expected.
+
+To create the index.html file with the content "Hello LAMP from Jay" in the /var/www/projectlamp directory, use the following command: sudo echo 'Hello LAMP from Jay' > /var/www/projectlamp/index.html.
+
+
+
+* open our web browser and try to access our website using the IP address:
+http://<EC2-Public-IP-Address>:80
+
+Note
+
+Replace <EC2-Public-IP-Address> with your actual EC2 instance's public IP address.
+
+![pic](img/img30.png)
+
+* Remove the index.html file by running the following command: sudo rm /var/www/projectlamp/index.html 
