@@ -251,11 +251,10 @@ Finally, reload Apache for the changes to take effect: sudo systemctl reload apa
 
 phpinfo();
 
-![pic](img)
+![pic](img/img25.png)
 
 Once you've saved and closed the file, go back to your web browser and refresh the page. You should see something like this:
 
-Hello
-
+![pic](img/img26.png)
 
 
