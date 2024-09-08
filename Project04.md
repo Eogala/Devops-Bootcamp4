@@ -377,4 +377,8 @@ Now that your WordPress site is successfully configured to use your domain name,
 
 * Visit your website to confirm, and you'll notice that the "not secure" warning no longer appears, indicating that your site is now secure with HTTPS.
 
+![pic](img/imgY.png)
+
+![pic](img/imgZ.png)
+
 ## The End Of Project 4
