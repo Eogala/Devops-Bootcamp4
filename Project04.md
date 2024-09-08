@@ -258,7 +258,7 @@ Once you've saved and closed the file, go back to your web browser and refresh t
 ![pic](img)
 
 
-Install Wordpress
+## Install Wordpress
 
 After setting up our LAMP environment, we can start installing WordPress. First, we'll download the WordPress installation files and place them in the default web server root directory: /var/www/html.
 
@@ -298,7 +298,7 @@ This command sets read (r), write (w), and execute (x) permissions for the owner
 Change into the WordPress directory by running the command: cd wordpress.
 
 
-# Create An A Record
+## Create An A Record
 
 To make your website accessible via your domain name rather than the IP address, you'll need to set up a DNS record. I did this by buying my domain from Namecheap and then moving hosting to AWS Route 53, where I set up an A record.
 
