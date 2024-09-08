@@ -257,47 +257,6 @@ Once you've saved and closed the file, go back to your web browser and refresh t
 
 ![pic](img)
 
-
-## Install Wordpress
-
-After setting up our LAMP environment, we can start installing WordPress. First, we'll download the WordPress installation files and place them in the default web server root directory: /var/www/html.
-
-* Navigate to the directory using the cd command cd /var/www/html, and then download the WordPress installation files using the following command: sudo wget -c http://wordpress.org/latest.tar.gz
-
-* Extract the files from the downloaded WordPress archive using the command: sudo tar -xzvf latest.tar.gz
-
-* Run the command ls -l to confirm the existence of the wordpress directory in the current location (/var/www/html).
-
-* Check the user running your web server with the command: ps aux | grep apache | grep -v grep.
-
-* Grant ownership of the WordPress directory and its files to the web server user (www-data) by running the command: sudo chown -R www-data:www-data /var/www/html/wordpress.
-* Access your MySQL root account with the following command: sudo mysql -u root -p①. Enter the password② you set earlier when prompted.
-* To create a separate database named wp_db for WordPress to manage, execute the following command in the MySQL prompt: CREATE DATABASE wp_db;
-
-
-his command allows you to create a new database (wp_db) within your MySQL environment. Feel free to name it as you prefer.
-
-To access the new database, you can create a MySQL user account with a strong password using the following command: CREATE USER jay@localhost IDENTIFIED BY 'wp-password';
-
-
-Replace 'wp-password' with your preferred strong password for the MySQL user account.
-
-To grant your created user (jay@localhost) all privileges needed to work with the wp_db database in MySQL, use the following commands:
-GRANT ALL PRIVILEGES ON wp_db.* TO jay@localhost;
-FLUSH PRIVILEGES;
-
-This grants all privileges (ALL PRIVILEGES) on all tables within the wp_db database (wp_db.*) to the user jay when accessing from localhost. The FLUSH PRIVILEGES command ensures that MySQL implements the changes immediately. Adjust the database name (wp_db) and username (jay) as per your setup.
-
-Type exit to exit the MySQL shell.
-
-Grant executable permissions recursively (-R) to the wordpress folder using the following command: sudo chmod -R 777 wordpress/
-
-
-This command sets read (r), write (w), and execute (x) permissions for the owner, group, and others on all files and directories within the wordpress folder. Using 777 permissions is quite permissive and may not be necessary for all files and folders; consider adjusting permissions based on security requirements.
-
-Change into the WordPress directory by running the command: cd wordpress.
-
-
 ## Create An A Record
 
 To make your website accessible via your domain name rather than the IP address, you'll need to set up a DNS record. I did this by buying my domain from Namecheap and then moving hosting to AWS Route 53, where I set up an A record.
