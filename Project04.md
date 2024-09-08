@@ -371,10 +371,10 @@ Now that your WordPress site is successfully configured to use your domain name,
 
 * install certbot by executing the following commands: sudo apt update sudo apt install certbot python3-certbot-apache
 
-Run the command sudo certbot --apache to request your SSL/TLS certificate. Follow the instructions provided by Certbot to select the domain name for which you want to enable HTTPS.
+* Run the command sudo certbot --apache to request your SSL/TLS certificate. Follow the instructions provided by Certbot to select the domain name for which you want to enable HTTPS.
 
-You should receive a message confirming that the certificate has been successfully obtained.
+* You should receive a message confirming that the certificate has been successfully obtained.
 
-Visit your website to confirm, and you'll notice that the "not secure" warning no longer appears, indicating that your site is now secure with HTTPS.
+* Visit your website to confirm, and you'll notice that the "not secure" warning no longer appears, indicating that your site is now secure with HTTPS.
 
 ## The End Of Project 4
