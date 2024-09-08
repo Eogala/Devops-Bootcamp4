@@ -56,6 +56,57 @@ OpenSSL command
  Task 4: Map the IP address to the DNS A record
  Task 5: Validate the WordPress website setup by accessing the web address.
 
+ # Documentation
+Ubuntu server was spinned up taking reference from project 1
+
+setting up inbound rule for MYSQL in the security group. Click on Security and select the Security group. 
 
 
 ![pic](img/img1.png)
+
+Click on Edit inbound rules to add rule
+
+
+I Clicked on Custom TCP to select MySQL/Aurora!
+
+
+
+IP address was added to allow access and restrict it to MySQL exclusively to the Web Server’s IP address. (inbound Rule configuration, specify the source as /32) then click Save rules
+
+
+Connected to your Ubuntu server via SSH using terminal
+
+
+
+## Installation of Apache
+To install Apache, the following commands was used in your terminal.
+
+sudo apt update
+sudo apt install apache2
+
+
+
+
+To enable Apache to start on boot, execute sudo systemctl enable apache2, and then verify its status with the sudo systemctl status apache2 command.
+
+
+let's check if our server is running and accessible both locally and from the Internet by executing the following command: curl http://localhost:80.
+
+
+Copy your public IPv4 address from your EC2 dashboard, to test how our Apache HTTP server responds to requests from the Internet.
+
+
+Start the interactive script by running: sudo mysql_secure_installation. Answer y for yes, or any other key to continue without enabling specific options.
+
+Copy your public IPv4 address from your EC2 dashboard.
+
+
+## Install MYSQL
+To install this software using 'apt', run the command sudo apt install mysql-server. When prompted, confirm the installation by typing 'Y' and then pressing ENTER.
+
+After the installation is complete, log in to the MySQL console by typing: sudo mysql
+
+
+
+
+
