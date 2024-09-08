@@ -257,4 +257,4 @@ Once you've saved and closed the file, go back to your web browser and refresh t
 
 ![pic](img/img26.png)
 
-
+## Install Wordpress
