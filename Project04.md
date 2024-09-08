@@ -79,24 +79,34 @@ IP address was added to allow access and restrict it to MySQL exclusively to the
 
 Connected to your Ubuntu server via SSH using terminal
 
+![pic](img/img5.png)
 
 
 ## Installation of Apache
 To install Apache, the following commands was used in your terminal.
-
 sudo apt update
+
+![pic](img/img6.png)
+
 sudo apt install apache2
 
+![pic](img/img8.png)
 
 
 
 To enable Apache to start on boot, execute sudo systemctl enable apache2, and then verify its status with the sudo systemctl status apache2 command.
+
+![pic](img)
 
 
 let's check if our server is running and accessible both locally and from the Internet by executing the following command: curl http://localhost:80.
 
 
 Copy your public IPv4 address from your EC2 dashboard, to test how our Apache HTTP server responds to requests from the Internet.
+
+![pic](img/img10.png)
+
+![pic](img/img11.png)
 
 
 Start the interactive script by running: sudo mysql_secure_installation. Answer y for yes, or any other key to continue without enabling specific options.
@@ -107,7 +117,21 @@ Copy your public IPv4 address from your EC2 dashboard.
 ## Install MYSQL
 To install this software using 'apt', run the command sudo apt install mysql-server. When prompted, confirm the installation by typing 'Y' and then pressing ENTER.
 
+![pic](img/img13.png)
+
+
 After the installation is complete, log in to the MySQL console by typing: sudo mysql
+
+* Run the following command to set the password for the root user with the MySQL native password authentication method: ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass';. Exit the MySQL shell when you're done by typing exit.
+
+![pic](img/img14.png)
+
+Start the interactive script by running: sudo mysql_secure_installation①. Answer y② for yes, or any other key to continue without enabling specific options.
+
+* Set your password validation policy level. setting my password validation policy level to 0 because I don't require much security, as I will be terminating all resources immediately after this project. However, on the job, it's advised to use the strongest level, which is 2.
+
+
+I Enable MySQL to start on boot by executing sudo systemctl enable mysql, and then confirm its status with the sudo systemctl status mysql command.
 
 
 
