@@ -66,7 +66,7 @@ setting up inbound rule for MYSQL in the security group. Click on Security and s
 
 Click on Edit inbound rules to add rule
 
-
+![pic](img/img2.png)
 I Clicked on Custom TCP to select MySQL/Aurora!
 
 
