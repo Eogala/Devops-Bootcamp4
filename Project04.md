@@ -191,9 +191,9 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
 
 To disable Apache's default website, use the a2dissite command. Type: sudo a2dissite 000-default
 
-To ensure your configuration file doesn’t contain syntax errors, run: sudo apache2ctl configtest. You should see "Syntax OK" in the output if your configuration is correct.
+* To ensure your configuration file doesn’t contain syntax errors, run: sudo apache2ctl configtest. You should see "Syntax OK" in the output if your configuration is correct.
 
-Finally run: sudo systemctl reload apache2. This will reload Apache for the changes to take effect.
+* Finally run: sudo systemctl reload apache2. This will reload Apache for the changes to take effect.
 
 
 
