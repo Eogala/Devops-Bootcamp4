@@ -126,14 +126,27 @@ After the installation is complete, log in to the MySQL console by typing: sudo 
 
 ![pic](img/img14.png)
 
-Start the interactive script by running: sudo mysql_secure_installation①. Answer y② for yes, or any other key to continue without enabling specific options.
+* Start the interactive script by running: sudo mysql_secure_installation①. Answer y② for yes, or any other key to continue without enabling specific options.
 
 * Set your password validation policy level. setting my password validation policy level to 0 because I don't require much security, as I will be terminating all resources immediately after this project. However, on the job, it's advised to use the strongest level, which is 2.
 
 
-I Enable MySQL to start on boot by executing sudo systemctl enable mysql, and then confirm its status with the sudo systemctl status mysql command.
+* I Enable MySQL to start on boot by executing sudo systemctl enable mysql, and then confirm its status with the sudo systemctl status mysql command.
+
+![pic](img/img16.png)
+
+## Install PHP
+* PHP was installed along with required extensions by running the following script: sudo apt install php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip
 
 
+![pic](img/img17.png)
 
 
+ * Execute sudo apt install php libapache2-mod-php php-mysql
 
+![pic](img/img18.png)
+
+
+* Confirm the downloaded PHP version by running php -v.
+
+![pic](img/img19.png)
