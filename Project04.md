@@ -258,3 +258,18 @@ Once you've saved and closed the file, go back to your web browser and refresh t
 ![pic](img/img26.png)
 
 ## Install Wordpress
+* install certbot by executing the following commands: sudo apt update sudo apt install certbot python3-certbot-apache
+
+![pic](img/img27.png)
+
+* Run the command sudo certbot --apache to request your SSL/TLS certificate. Follow the instructions provided by Certbot to select the domain name for which you want to enable HTTPS.
+
+![pic](img)
+
+
+
+
+
+
+
+
