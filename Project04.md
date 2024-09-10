@@ -340,15 +340,24 @@ define('WP_SITEURL', 'http://<domain name>');
 
 Replace http://<domain name> with your actual domain name. Save the changes and exit the editor.
 
+![pic](img/Screenshot%20(349).png)
 
-Reload your Apache server to apply the changes with the command: sudo systemctl reload apache2, After reloading, visit your website at http://<domain name> to view your WordPress site. Replace with your actual domain name.
+
+* Reload your Apache server to apply the changes with the command: sudo systemctl reload apache2, After reloading, visit your website at http://<domain name> to view your WordPress site. Replace with your actual domain name.
 
 
-To log in to your WordPress admin portal, visit http://<domain name>/wp-admin, Enter your username① and password②, then click on log In③. Replace with your actual domain name.
+![pic](img/img350.png)
 
-My domain name is cloudghoul.online, so i'll visit http://cloudghoul.online/wp-admin.
+
+![pic](img/Screenshot%20(341).png)
+
+* I log in to the WordPress admin portal, visit http://<domain name>/wp-admin, Enter your username① and password②, then click on log In③. Replace with your actual domain name.
+
+My domain name is eogala1818.xyz, so i'll visit http://eogala1818.xyz/wp-admin.
 
 Now that your WordPress site is successfully configured to use your domain name, the next step is to secure it by requesting an SSL/TLS certificate.
+
+![pic](img/Screenshot%20(342).png)
 
 
 # Install certbot and Request For an SSL/TLS Certificate
@@ -358,7 +367,14 @@ Now that your WordPress site is successfully configured to use your domain name,
 
 * Run the command sudo certbot --apache to request your SSL/TLS certificate. Follow the instructions provided by Certbot to select the domain name for which you want to enable HTTPS.
 
+![pic](img/Screenshot%20(364).png)
+
 * You should receive a message confirming that the certificate has been successfully obtained.
+
+![pic](img/Screenshot%20(363).png)
+
+
+![pic](img/Screenshot%20(365).png)
 
 * Visit your website to confirm, and you'll notice that the "not secure" warning no longer appears, indicating that your site is now secure with HTTPS.
 
