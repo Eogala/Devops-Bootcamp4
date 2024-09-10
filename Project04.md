@@ -270,28 +270,40 @@ Once you've saved and closed the file, go back to your web browser and refresh t
 
 ## Create An A Record
 
-To make your website accessible via your domain name rather than the IP address, you'll need to set up a DNS record. I did this by buying my domain from Namecheap and then moving hosting to AWS Route 53, where I set up an A record.
+To make the website accessible via the  domain name rather than the IP address, i had to set up a DNS record. I did this by buying my domain from Namecheap and then moving hosting to AWS Route 53, where I set up an A record.
 
 Note
 
-Visit Project1 for instructions on how to create a hosted zone.
+* Project1  was used as reference for instructions on how to create a hosted zone.
 
-Point your domain's DNS records to the IP addresses of your Apache load balancer server.
+* Point your domain's DNS records to the IP addresses of your Apache load balancer server.
 
-In route 53, click on Create record.
+* In route 53, click on Create record.
+
+![pic](img)
+
+
+* Paste your IP address and then click on Create records to create the root domain.
+
+
+![pic](img)
 
 
 
-Paste your IP address➀ and then click on Create records➁ to create the root domain.
+* Click on Create record again, to create the record for your sub domain.
 
-Click on Create record again, to create the record for your sub domain.
-Paste your IP address➀, input the Record name(www➁) and then click on Create records➂.
+![pic](img)
 
-To update your Apache configuration file in the sites-available directory to point to your domain name, use the command: sudo nano /etc/apache2/sites-available/projectlamp.conf.
 
-This command opens the projectlamp.conf file in the nano text editor with superuser privileges (sudo). Within the editor, adjust the necessary details to reflect your domain name configuration.
+Paste your IP address, input the Record name(www) and then click on Create records.
 
-Ensure that the server settings in your Apache configuration point to your domain name, and that the document root accurately points to your WordPress directory. Once you've made these adjustments, save the changes and exit the editor.
+![pic](img)
+
+* To update your Apache configuration file in the sites-available directory to point to your domain name, use the command: sudo nano /etc/apache2/sites-available/projectlamp.conf.
+
+* This command opens the projectlamp.conf file in the nano text editor with superuser privileges (sudo). Within the editor, adjust the necessary details to reflect your domain name configuration.
+
+* Ensure that the server settings in your Apache configuration point to your domain name, and that the document root accurately points to your WordPress directory. Once you've made these adjustments, save the changes and exit the editor.
 
 
 <VirtualHost *:80>
@@ -312,9 +324,15 @@ Ensure that the server settings in your Apache configuration point to your domai
 </VirtualHost>
 
 
-he new configuration defines how Apache should handle requests for your domain, and its subdomain. With this configuration: Apache will handle requests for cloudghoul.online and www.cloudghoul.online. Files will be served from the /var/www/html/wordpress directory. Directory listings and symbolic links are allowed. The directory can be accessed by any client. Error logs will be written to /var/log/apache2/error.log. Access logs will be written to /var/log/apache2/access.log in the combined log format.
 
-To update your wp-config.php file with DNS settings, use the following command: sudo nano wp-config.php and add these lines to the file:
+
+
+
+![pic](img)
+
+The new configuration defines how Apache should handle requests for your domain, and its subdomain. With this configuration: Apache will handle requests for cloudghoul.online and www.cloudghoul.online. Files will be served from the /var/www/html/wordpress directory. Directory listings and symbolic links are allowed. The directory can be accessed by any client. Error logs will be written to /var/log/apache2/error.log. Access logs will be written to /var/log/apache2/access.log in the combined log format.
+
+* To update your wp-config.php file with DNS settings, use the following command: sudo nano wp-config.php and add these lines to the file:
 
 
 /** MY DNS SETTINGS */
@@ -349,7 +367,10 @@ Now that your WordPress site is successfully configured to use your domain name,
 
 ![pic](img/imgY.png)
 
+
+
 ![pic](img/imgZ.png)
+
 
 ## The End Of Project 4
 
