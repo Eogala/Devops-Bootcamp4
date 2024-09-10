@@ -246,10 +246,12 @@ Finally, reload Apache for the changes to take effect: sudo systemctl reload apa
 * To create a new file named index.php inside your custom web root folder (/var/www/projectlamp), you can use the following command to open it in the nano text editor: nano /var/www/projectlamp/index.php.
 
 * This will create a new file. Copy and paste the following PHP code into the new file:
-
+~~~
 <?php
 
 phpinfo();
+
+~~~
 
 ![pic](img/img25.png)
 
@@ -266,7 +268,6 @@ Once you've saved and closed the file, go back to your web browser and refresh t
 
 ![pic](img)
 
-Hello
 
 
 
