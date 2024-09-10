@@ -280,24 +280,24 @@ Note
 
 * In route 53, click on Create record.
 
-![pic](img)
+![pic](img/img%20(343).png)
 
 
 * Paste your IP address and then click on Create records to create the root domain.
 
 
-![pic](img)
+![pic](img/img(344).png)
 
 
 
 * Click on Create record again, to create the record for your sub domain.
 
-![pic](img)
+![pic](img/img(371).png)
 
 
 Paste your IP address, input the Record name(www) and then click on Create records.
 
-![pic](img)
+![pic](img/img(345).png)
 
 * To update your Apache configuration file in the sites-available directory to point to your domain name, use the command: sudo nano /etc/apache2/sites-available/projectlamp.conf.
 
@@ -325,10 +325,7 @@ Paste your IP address, input the Record name(www) and then click on Create recor
 
 
 
-
-
-
-![pic](img)
+![pic](img/Screenshot%20(347).png)
 
 The new configuration defines how Apache should handle requests for your domain, and its subdomain. With this configuration: Apache will handle requests for cloudghoul.online and www.cloudghoul.online. Files will be served from the /var/www/html/wordpress directory. Directory listings and symbolic links are allowed. The directory can be accessed by any client. Error logs will be written to /var/log/apache2/error.log. Access logs will be written to /var/log/apache2/access.log in the combined log format.
 
