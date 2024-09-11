@@ -222,15 +222,19 @@ With the default DirectoryIndex settings on Apache, a file named index.html will
 
 Edit the dir.conf file using a text editor (such as nano or vi): sudo nano /etc/apache2/mods-enabled/dir.conf
 
+
+~~~
 <IfModule mod_dir.c>
     DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
 </IfModule>
+~~~
 
 To prioritize index.php over index.html, move index.php to the beginning of the list, like this:
-
+~~~
 <IfModule mod_dir.c>
     DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
 </IfModule>
+~~~
 
 ![pic](img)
 
