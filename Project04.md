@@ -270,7 +270,7 @@ Once you've saved and closed the file, go back to your web browser and refresh t
 
 Select your preferred language and then click on Continue to proceed.
 
-![pic](img)
+![pic](img/Screenshot%20(336).png)
 Enter the required information and click on Install WordPress once you have finished.
 
 Site Title①: Enter the name of your WordPress website. It's recommended to use your domain name for better optimization.
@@ -279,13 +279,14 @@ Password③: Set a secure password to protect your WordPress account.
 Your email④: Provide your email address to receive updates and notifications.
 Search engine visibility⑤: You can leave this box unchecked to prevent search engines from indexing your site until it's ready.
 
-![pic](img)
+![pic](img/Screenshot%20(339).png)
+
+* WordPress has been successfully installed. log in to your admin dashboard using the previously set up information by clicking the Log In button.
 
 
 * Enter your username and password, then click Log In to access your WordPress admin dashboard.
 
-
-![pic](img)
+![pic](img/Screenshot%20(341).png)
 
 Once you successfully log in, you will be greeted by the WordPress dashboard page.
 
