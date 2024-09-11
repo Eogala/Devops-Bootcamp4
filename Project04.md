@@ -243,11 +243,10 @@ To prioritize index.php over index.html, move index.php to the beginning of the 
 Type y② to save the changes
 When prompted to confirm the file name, simply press ENTER to save the changes with the existing file name
 
-![pic](img)
+
 
 * Finally, reload Apache for the changes to take effect: sudo systemctl reload apache2.
 
-![pic](img)
 
 * Apache will prioritize index.php over index.html when both files exist in the same directory.
 
