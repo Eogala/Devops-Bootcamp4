@@ -96,10 +96,12 @@ sudo apt install apache2
 
 To enable Apache to start on boot, execute sudo systemctl enable apache2, and then verify its status with the sudo systemctl status apache2 command.
 
-![pic](img)
 
+![pic](img/img8.png)
 
 let's check if our server is running and accessible both locally and from the Internet by executing the following command: curl http://localhost:80.
+
+![pic](img/Screenshot%20(292).png)
 
 
 Copy your public IPv4 address from your EC2 dashboard, to test how our Apache HTTP server responds to requests from the Internet.
