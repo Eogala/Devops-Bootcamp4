@@ -268,6 +268,29 @@ Once you've saved and closed the file, go back to your web browser and refresh t
 
 ![pic](img)
 
+Select your preferred language and then click on Continue to proceed.
+
+![pic](img)
+Enter the required information and click on Install WordPress once you have finished.
+
+Site Title①: Enter the name of your WordPress website. It's recommended to use your domain name for better optimization.
+Username②: Choose a username for logging into WordPress.
+Password③: Set a secure password to protect your WordPress account.
+Your email④: Provide your email address to receive updates and notifications.
+Search engine visibility⑤: You can leave this box unchecked to prevent search engines from indexing your site until it's ready.
+
+![pic](img)
+
+
+* Enter your username and password, then click Log In to access your WordPress admin dashboard.
+
+
+![pic](img)
+
+Once you successfully log in, you will be greeted by the WordPress dashboard page.
+
+![pic](img/Screenshot%20(342).png)
+
 ## Create An A Record
 
 To make the website accessible via the  domain name rather than the IP address, i had to set up a DNS record. I did this by buying my domain from Namecheap and then moving hosting to AWS Route 53, where I set up an A record.
