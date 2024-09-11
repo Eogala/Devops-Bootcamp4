@@ -236,7 +236,7 @@ To prioritize index.php over index.html, move index.php to the beginning of the 
 </IfModule>
 ~~~
 
-![pic](img)
+![pic](img/Screenshot%20(311).png)
 
 
 * Press ctrl + x① on your keyboard to save and exit.
