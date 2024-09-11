@@ -266,7 +266,7 @@ Once you've saved and closed the file, go back to your web browser and refresh t
 
 * Run the command sudo certbot --apache to request your SSL/TLS certificate. Follow the instructions provided by Certbot to select the domain name for which you want to enable HTTPS.
 
-![pic](img)
+![pic](img/Screenshot%20(364).png)
 
 Select your preferred language and then click on Continue to proceed.
 
@@ -351,7 +351,7 @@ Paste your IP address, input the Record name(www) and then click on Create recor
 
 ![pic](img/Screenshot%20(347).png)
 
-The new configuration defines how Apache should handle requests for your domain, and its subdomain. With this configuration: Apache will handle requests for cloudghoul.online and www.cloudghoul.online. Files will be served from the /var/www/html/wordpress directory. Directory listings and symbolic links are allowed. The directory can be accessed by any client. Error logs will be written to /var/log/apache2/error.log. Access logs will be written to /var/log/apache2/access.log in the combined log format.
+* The new configuration defines how Apache should handle requests for your domain, and its subdomain. With this configuration: Apache will handle requests for cloudghoul.online and www.cloudghoul.online. Files will be served from the /var/www/html/wordpress directory. Directory listings and symbolic links are allowed. The directory can be accessed by any client. Error logs will be written to /var/log/apache2/error.log. Access logs will be written to /var/log/apache2/access.log in the combined log format.
 
 * To update your wp-config.php file with DNS settings, use the following command: sudo nano wp-config.php and add these lines to the file:
 
@@ -377,9 +377,9 @@ Replace http://<domain name> with your actual domain name. Save the changes and 
 
 * I log in to the WordPress admin portal, visit http://<domain name>/wp-admin, Enter your username① and password②, then click on log In③. Replace with your actual domain name.
 
-My domain name is eogala1818.xyz, so i'll visit http://eogala1818.xyz/wp-admin.
+* My domain name is eogala1818.xyz, so i'll visit http://eogala1818.xyz/wp-admin.
 
-Now that your WordPress site is successfully configured to use your domain name, the next step is to secure it by requesting an SSL/TLS certificate.
+* Now that your WordPress site is successfully configured using my  domain name, the next step is to secure it by requesting an SSL/TLS certificate.
 
 ![pic](img/Screenshot%20(342).png)
 
