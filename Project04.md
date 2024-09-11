@@ -197,9 +197,9 @@ To disable Apache's default website, use the a2dissite command. Type: sudo a2dis
 
 
 
-Our new website is now active, but the web root /var/www/projectlamp is still empty. Let's create an index.html file in that location to test that the virtual host works as expected.
+The new website is now active, but the web root /var/www/projectlamp is still empty. Let's create an index.html file in that location to test that the virtual host works as expected.
 
-To create the index.html file with the content "Hello LAMP from Jay" in the /var/www/projectlamp directory, use the following command: sudo echo 'Hello LAMP from Jay' > /var/www/projectlamp/index.html.
+* To create the index.html file with the content "Hello LAMP from Jay" in the /var/www/projectlamp directory, use the following command: sudo echo 'Hello LAMP from Jay' > /var/www/projectlamp/index.html.
 
 
 
@@ -208,13 +208,13 @@ http://<EC2-Public-IP-Address>:80
 
 Note
 
-Replace <EC2-Public-IP-Address> with your actual EC2 instance's public IP address.
+* Replace <EC2-Public-IP-Address> with your actual EC2 instance's public IP address.
 
 ![pic](img/img30.png)
 
 * Remove the index.html file by running the following command: sudo rm /var/www/projectlamp/index.html 
 
-Enable PHP On The Website
+## Enable PHP On The Website
 
 With the default DirectoryIndex settings on Apache, a file named index.html will always take precedence over an index.php file. To change the precedence of index files (such as index.php over index.html) in Apache, you'll need to edit the dir.conf file. Here’s how you can do it:
 
@@ -231,13 +231,15 @@ To prioritize index.php over index.html, move index.php to the beginning of the 
 </IfModule>
 
 ![pic](img)
-Press ctrl + x① on your keyboard to save and exit.
+
+
+* Press ctrl + x① on your keyboard to save and exit.
 Type y② to save the changes
 When prompted to confirm the file name, simply press ENTER to save the changes with the existing file name
 
 ![pic](img)
 
-Finally, reload Apache for the changes to take effect: sudo systemctl reload apache2.
+* Finally, reload Apache for the changes to take effect: sudo systemctl reload apache2.
 
 ![pic](img)
 
@@ -258,6 +260,13 @@ phpinfo();
 Once you've saved and closed the file, go back to your web browser and refresh the page. You should see something like this:
 
 ![pic](img/img26.png)
+
+
+* This page provides information about your server from the perspective of PHP. It is useful for debugging and to ensure that your settings are being applied correctly.
+ After verifying the relevant information about your PHP server through that page, it's recommended to remove the file you created, as it contains sensitive information about your PHP environment and your Ubuntu server. You can use the rm command to do so: sudo rm /var/www/projectlamp/index.php.
+
+The page can be recreate if you need to access the information again later.
+
 
 ## Install Wordpress
 * install certbot by executing the following commands: sudo apt update sudo apt install certbot python3-certbot-apache
