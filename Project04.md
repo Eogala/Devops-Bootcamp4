@@ -50,11 +50,15 @@ OpenSSL command
 
 
 ## Checklist
- Task 1: Deploy an Ubuntu Server
- Task 2: Set up your LAMP stack on the server
- Task 3: Configure the wordpress Application
- Task 4: Map the IP address to the DNS A record
- Task 5: Validate the WordPress website setup by accessing the web address.
+Task 1:  Deploy an Ubuntu Server
+
+Task 2:  Set up your LAMP stack on the server
+
+Task 3:  Configure the wordpress Application
+
+Task 4:  Map the IP address to the DNS A record
+
+Task 5: Validate the WordPress website setup by accessing the web address.
 
  # Documentation
 Ubuntu server was spinned up taking reference from project 1
